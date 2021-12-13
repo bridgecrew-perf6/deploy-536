@@ -18,7 +18,7 @@ def hello():
     result=model.predict(test)
     pred_name = np.argmax(result)
     pred_name = class_names[pred_name] 
-    return pred_name
+    return str(pred_name)
 
     
 if __name__ == "__main__":
